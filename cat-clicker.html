@@ -9,17 +9,23 @@
 </head>
 <body>
 <div>
-    <img id="my-elem" src="cat.jpg">
+    <img id="my-elem" onclick="hello()" src="cat.jpg">
 </div>
-<button id="my-button">Cute Kitty!</button>
+<label for="street">Here is how many times you clicked on this cute kitty: </label><button id="my-button">0</button>
 
 <script>
-    var x = document.getElementById("my-button");
-    x.addEventListener("click", myFunction);
+    // var x = document.getElementById("my-button");
+    // x.addEventListener("click", myFunction);
 
-    function myFunction() {
-        alert ("Hello, Kitty!");
-    }
+    // function myFunction() {
+    //     alert ("Hello, Kitty!");
+    // }
+
+    var clicks = 0;
+    function hello() {
+        clicks += 1;
+        document.getElementById("my-button").innerHTML = clicks;
+    };
 </script>
 
 </body>
