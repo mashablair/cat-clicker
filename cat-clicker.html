@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat-clicker</title>
+    <!-- Simple game created by Maria Blair for Udacity class "JS Design Patterns" -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script type="text/javascript" src="cat-clicker.js"></script> -->
+</head>
+<body>
+<div>
+    <img id="my-elem" src="cat.jpg">
+</div>
+<button id="my-button">Cute Kitty!</button>
+
+<script>
+    var x = document.getElementById("my-button");
+    x.addEventListener("click", myFunction);
+
+    function myFunction() {
+        alert ("Hello, Kitty!");
+    }
+</script>
+
+</body>
+</html>
+

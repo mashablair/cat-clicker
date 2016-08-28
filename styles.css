@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    background: #64DD17;
+
+}
+
+#my-button {
+    background-color: pink;
+    padding: 10px;
+    font-size: 25px;
+}
+
+img {
+    border: 3px solid #76FF03;
+    padding: 1px;
+    border-radius: 10px;
+}
