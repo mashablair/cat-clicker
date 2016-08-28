@@ -4,6 +4,10 @@ body {
 
 }
 
+h1 {
+    color: #EC407A;
+}
+
 #my-button {
     background-color: pink;
     padding: 10px;

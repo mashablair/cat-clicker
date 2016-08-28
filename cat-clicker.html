@@ -9,11 +9,15 @@
 </head>
 <body>
 <div>
+    <h1>Let's play with this cute kitty!</h1>
+</div>
+<div>
     <img id="my-elem" onclick="hello()" src="cat.jpg">
 </div>
 <label for="street">Here is how many times you clicked on this cute kitty: </label><button id="my-button">0</button>
 
 <script>
+    //JS we are supposed to use:
     // var x = document.getElementById("my-button");
     // x.addEventListener("click", myFunction);
 
@@ -21,6 +25,7 @@
     //     alert ("Hello, Kitty!");
     // }
 
+    //JS that worked for me, from http://stackoverflow.com/questions/22402777/html-javascript-button-click-counter
     var clicks = 0;
     function hello() {
         clicks += 1;
