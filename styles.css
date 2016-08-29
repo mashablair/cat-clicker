@@ -25,3 +25,42 @@ label {
     color: #4527A0;
     font-weight: bold;
 }
+
+/*Text over the image: */
+.my-elem {
+   /*position: relative;*/
+   width: 50%;  /*for IE 6*/
+}
+
+h2 {
+   /*text-align: left;*/
+   /*position: absolute;*/
+   top: 200px;
+   left: 20;
+   width: 65%;
+   color: #EC407A;
+   font-size: 2em;
+   padding-left: 18%;
+}
+
+/* Flexbox for 2 columns: (from https://davidwalsh.name/demo/flexbox-column.php) */
+
+.flexbox-container {
+    padding: 20px;
+    background: #eee;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flexbox-container > div {
+    width: 50%;
+    min-height: 200px;
+    background: #fff;
+    padding: 10px;
+}
+
+.flexbox-container > div:first-child {
+    margin-right: 20px;
+}
