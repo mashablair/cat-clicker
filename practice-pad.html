@@ -8,17 +8,35 @@
 
 <body>
 
-    <script>
+<script>
+//These lines will clear ANY page from its content!
+document.body.innerHTML = 'Hello!';
+document.body.style.background="lightgreen";
 
-    var clicks = 0;
-    function hello() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
+var nums = [1,2,3];
 
-    </script>
-    <button type="button" onclick="hello()">Click me</button>
-    <p>Clicks: <a id="clicks">0</a></p>
+// Let's loop over the numbers in our array
+for (var i = 0; i < nums.length; i++) {
+
+    // This is the number we're on...
+    var num = nums[i];
+
+    // We're creating a DOM element for the number
+    var elem = document.createElement('div');
+    elem.textContent = num;
+
+    // ... and when we click, alert the value of `num`
+    // Here we use the outer function. We immediately invoke it by wrapping it in () and calling it right away, passing in num. It's called IIFE (immediately invoked function expression). We store the value of num in numCopy inside our out
+    elem.addEventListener('click', (function(numCopy) {
+        return function() {
+            alert(numCopy);
+        };
+    })(num));
+
+    // finally, let's add this element to the document
+    document.body.appendChild(elem);
+};
+</script>
 
 </body>
 </html>
